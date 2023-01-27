@@ -1,0 +1,14 @@
+<%- include ('header') -%>
+
+<h1> <%= newlist %> </h1>
+<form action="/<%= newlist %> " method="post">
+    <input type="text" name="pod" placeholder="write your list">
+
+    <button type="submit">submit</button>
+</form>
+<% older.forEach (function(lid){
+    <p> <%= lid.name %> </p>
+})
+
+
+<%- include ('footer') %>
